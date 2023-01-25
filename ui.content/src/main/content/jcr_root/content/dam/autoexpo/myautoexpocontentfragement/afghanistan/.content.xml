@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="49a01e5a-be44-47f9-a668-3e9be1444012">
+    <jcr:content
+        jcr:description=""
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Afghanistan"
+        contentFragment="{Boolean}true">
+        <data
+            cq:model="/conf/autoexpo/settings/dam/cfm/models/countrylist"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                multiStateList_x0040_LastModified="{Date}2022-03-21T14:14:57.576+05:30"
+                txtCountryCode_x0040_LastModified="{Date}2022-03-21T14:14:57.576+05:30"
+                txtCountryName_x0040_LastModified="{Date}2022-03-21T14:14:57.576+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

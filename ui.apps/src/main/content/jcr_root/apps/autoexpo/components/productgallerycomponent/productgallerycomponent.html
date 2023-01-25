@@ -1,0 +1,84 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientlib.all @ categories='productgallery.clientlib'}"></sly>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<input type="hidden" id="trgtselectedpath" value="${properties.productGallery}" />
+<input type='hidden' id='mycurrpage' value='${currentPage.path}'/>
+<section class="blog-content">
+       <div class="row">
+           <div class="blog-left">
+               <img id="myimg-preview" src="" />
+                <div id = "boxes">
+                    <div id = "leftbox">
+                        <div id="anotherSection" style="float:left;overflow-x:hidden;overflow-y:hidden;width:100%;height:150px;white-space:nowrap;">
+                            <div id="myajaxResponse"></div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="blog-right">
+               <h3>Key Specifications</h3>
+               <div>
+                   <span class="iconname"><svg class='V3C5bO' width='14' height='14' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path class='_1bS9ic' d="M13.88 8.21h-.27a1 1 0 01-1-1V4.59l.5 1.09v1.5a.53.53 0 00.53.53h.28zM10.68 7H4.59a.26.26 0 01-.26-.26V2.82a1.3 1.3 0 011.3-1.3h4a1.3 1.3 0 011.3 1.3v3.94a.26.26 0 01-.25.24zm-5.85-.5h5.61V2.82a.8.8 0 00-.8-.8h-4a.8.8 0 00-.8.8zm7.62 9.42h-10a1.22 1.22 0 010-2.44h.26V2.09a2 2 0 012-2h5.64a2 2 0 012 2v.07l2.29 5a.58.58 0 010 .18v4.23a.88.88 0 11-1.75 0v-.89a.45.45 0 00-.45-.44h-.13v3.25a1.22 1.22 0 010 2.44zm-10-1.59a.37.37 0 100 .74h10a.37.37 0 100-.74h-10zm1.11-.84h8V2.09A1.16 1.16 0 0010.39.93H4.75a1.16 1.16 0 00-1.16 1.16zm8.85-4.09h.13a1.3 1.3 0 011.3 1.29v.89l.05-4.14-1.48-3.24z" fill='#000'></path></svg>
+                   Mileage (upto)</span>
+                   <span>4.61 kmpl</span>
+               </div>
+               <div>
+					<span class="iconname"><svg class='V3C5bO' viewBox="0 0 16 16" fill="currentcolor" tabindex="-1" focusable="false" aria-hidden="true" role="img"><path d="M11.86 12.56H4.59a.75.75 0 01-.68-.42l-.31-.62H2.51a.76.76 0 01-.76-.76V9h-.49v1.25a.55.55 0 01-.5.52c-.45 0-.5-.52-.5-.52V6.61a.5.5 0 01.5-.5.5.5 0 01.5.5V8h.49V6.09a.76.76 0 01.76-.76h.28v-.28a.76.76 0 01.76-.76h2.08V3.12H3.55V3c-.49-.07-.5-.19-.5-.41a.5.5 0 01.48-.51h5.22a.5.5 0 01.5.5.51.51 0 01-.5.5H6.63v1.21h2.12a.76.76 0 01.76.76v.28h1.31a.74.74 0 01.66.38l.82 1.44h.86V6.09a.76.76 0 01.76-.76H15a.76.76 0 01.76.76v5.19A.76.76 0 0115 12h-1.08a.76.76 0 01-.76-.76v-1.02h-.54v1.58a.76.76 0 01-.76.76zm-7.12-1h6.88V9.72a.51.51 0 01.5-.5h1.54a.5.5 0 01.5.5V11h.58V6.33h-.58v1.32a.5.5 0 01-.5.5H12a.51.51 0 01-.43-.26l-.89-1.56H9a.5.5 0 01-.5-.5v-.54H3.79v.54a.5.5 0 01-.5.5h-.54v4.19h1.16a.51.51 0 01.45.28zM3.57 3z"></path></svg>
+                    Engine (upto)</span>
+                    <span>3956 cc</span>
+                </div>
+                <div>
+                    <span class="iconname"><svg class="V3C5bO" viewBox="0 0 16 16" fill="currentcolor" tabindex="-1" focusable="false" aria-hidden="true" role="img"><path d="M6.29 7.79A2.49 2.49 0 103.77 5.3a2.51 2.51 0 002.52 2.49zm0-4.27A1.78 1.78 0 114.48 5.3a1.81 1.81 0 011.81-1.78zM10.65 9l.95-.3a.44.44 0 01.53.28.43.43 0 01-.28.54l2.3 1.12a.43.43 0 01-.19.81.43.43 0 01-.19 0l-2.35-1.15v.08a.43.43 0 01-.28.54h-.13a.42.42 0 01-.4-.3l-.35-1.11.07-.23a.55.55 0 01.32-.28zm4.92 5h-2.22L5.73 9.44a5.32 5.32 0 00.56.06 4.24 4.24 0 004.26-4.2A4.26 4.26 0 002 5.3a4.16 4.16 0 00.83 2.46 1.17 1.17 0 00-.95.11 1.19 1.19 0 00-.6 1V14H.43a.43.43 0 00-.43.43.43.43 0 00.43.43h15.14a.43.43 0 00.43-.43.43.43 0 00-.43-.43zM6.29 2A3.37 3.37 0 019.7 5.3a3.41 3.41 0 01-6.81 0A3.37 3.37 0 016.29 2zM2.16 9a.33.33 0 01.18-.3.36.36 0 01.36 0l9 5.44H2.16z"></path></svg>BHP</span>
+                    <span>542.0</span>
+                </div>
+                <div>
+					<span class="iconname"><svg class='V3C5bO' viewBox="0 0 16 16" fill="currentcolor" tabindex="-1" focusable="false" aria-hidden="true" role="img"><path d="M11.86 12.56H4.59a.75.75 0 01-.68-.42l-.31-.62H2.51a.76.76 0 01-.76-.76V9h-.49v1.25a.55.55 0 01-.5.52c-.45 0-.5-.52-.5-.52V6.61a.5.5 0 01.5-.5.5.5 0 01.5.5V8h.49V6.09a.76.76 0 01.76-.76h.28v-.28a.76.76 0 01.76-.76h2.08V3.12H3.55V3c-.49-.07-.5-.19-.5-.41a.5.5 0 01.48-.51h5.22a.5.5 0 01.5.5.51.51 0 01-.5.5H6.63v1.21h2.12a.76.76 0 01.76.76v.28h1.31a.74.74 0 01.66.38l.82 1.44h.86V6.09a.76.76 0 01.76-.76H15a.76.76 0 01.76.76v5.19A.76.76 0 0115 12h-1.08a.76.76 0 01-.76-.76v-1.02h-.54v1.58a.76.76 0 01-.76.76zm-7.12-1h6.88V9.72a.51.51 0 01.5-.5h1.54a.5.5 0 01.5.5V11h.58V6.33h-.58v1.32a.5.5 0 01-.5.5H12a.51.51 0 01-.43-.26l-.89-1.56H9a.5.5 0 01-.5-.5v-.54H3.79v.54a.5.5 0 01-.5.5h-.54v4.19h1.16a.51.51 0 01.45.28zM3.57 3z"></path></svg>
+                    Engine (upto)</span>
+                    <span>3956 cc</span>
+                </div>
+                <div>
+					<span class="iconname"><svg class='V3C5bO' viewBox="0 0 16 16" fill="currentcolor" tabindex="-1" focusable="false" aria-hidden="true" role="img"><path d="M11.86 12.56H4.59a.75.75 0 01-.68-.42l-.31-.62H2.51a.76.76 0 01-.76-.76V9h-.49v1.25a.55.55 0 01-.5.52c-.45 0-.5-.52-.5-.52V6.61a.5.5 0 01.5-.5.5.5 0 01.5.5V8h.49V6.09a.76.76 0 01.76-.76h.28v-.28a.76.76 0 01.76-.76h2.08V3.12H3.55V3c-.49-.07-.5-.19-.5-.41a.5.5 0 01.48-.51h5.22a.5.5 0 01.5.5.51.51 0 01-.5.5H6.63v1.21h2.12a.76.76 0 01.76.76v.28h1.31a.74.74 0 01.66.38l.82 1.44h.86V6.09a.76.76 0 01.76-.76H15a.76.76 0 01.76.76v5.19A.76.76 0 0115 12h-1.08a.76.76 0 01-.76-.76v-1.02h-.54v1.58a.76.76 0 01-.76.76zm-7.12-1h6.88V9.72a.51.51 0 01.5-.5h1.54a.5.5 0 01.5.5V11h.58V6.33h-.58v1.32a.5.5 0 01-.5.5H12a.51.51 0 01-.43-.26l-.89-1.56H9a.5.5 0 01-.5-.5v-.54H3.79v.54a.5.5 0 01-.5.5h-.54v4.19h1.16a.51.51 0 01.45.28zM3.57 3z"></path></svg>
+                    Engine (upto)</span>
+                    <span>3956 cc</span>
+                </div>
+                <div>
+                    <span class="iconname"><svg class="V3C5bO" viewBox="0 0 16 16" fill="currentcolor" tabindex="-1" focusable="false" aria-hidden="true" role="img"><path d="M12.16 4.68h.46a.78.78 0 00.77-.77V.77a.78.78 0 00-.77-.77h-.46a.77.77 0 00-.77.77v1.07H9.93v-.19a1.26 1.26 0 00-.36-.89 1.22 1.22 0 00-.88-.37H7.3a1.26 1.26 0 00-1.25 1.24v.21H4.61V.77A.77.77 0 003.84 0h-.46a.78.78 0 00-.77.77v3.14a.78.78 0 00.77.77h.46a.77.77 0 00.77-.77V2.84H6v.44a1.29 1.29 0 00.36.89 1.26 1.26 0 00.89.37h.25v6.16a1.09 1.09 0 00-.57.55l-.62 1.34a2.36 2.36 0 00-.18.57H4.61v-1.07a.77.77 0 00-.77-.77h-.46a.78.78 0 00-.77.77v3.14a.78.78 0 00.77.77h.46a.77.77 0 00.77-.77v-1.07h1.48v.14a1.14 1.14 0 001.13 1.13H8.7a1.14 1.14 0 001.13-1.13v-.14h1.56v1.07a.77.77 0 00.77.77h.46a.78.78 0 00.77-.77v-3.14a.78.78 0 00-.77-.77h-.46a.77.77 0 00-.77.77v1.07H9.78a2 2 0 00-.17-.57L9 11.25a1.1 1.1 0 00-.49-.51v-6.2h.17A1.26 1.26 0 009.92 3.3v-.46h1.47v1.07a.77.77 0 00.77.77zM8.7 13a1.25 1.25 0 01.13.57v.72a.13.13 0 01-.13.13H7.22a.13.13 0 01-.13-.13v-.72a1.25 1.25 0 01.13-.57l.62-1.34a.13.13 0 01.24 0zm.22-9.72a.25.25 0 01-.25.25H7.28a.25.25 0 01-.18-.08.25.25 0 01-.1-.16V1.64a.25.25 0 01.25-.25h1.44a.25.25 0 01.17.07.25.25 0 01.08.18z"></path></svg>Transmission</span>
+                    <span>Automatic</span>
+                </div>
+                <div>
+					<span class="iconname"><svg class='V3C5bO' viewBox="0 0 16 16" fill="currentcolor" tabindex="-1" focusable="false" aria-hidden="true" role="img"><path d="M11.86 12.56H4.59a.75.75 0 01-.68-.42l-.31-.62H2.51a.76.76 0 01-.76-.76V9h-.49v1.25a.55.55 0 01-.5.52c-.45 0-.5-.52-.5-.52V6.61a.5.5 0 01.5-.5.5.5 0 01.5.5V8h.49V6.09a.76.76 0 01.76-.76h.28v-.28a.76.76 0 01.76-.76h2.08V3.12H3.55V3c-.49-.07-.5-.19-.5-.41a.5.5 0 01.48-.51h5.22a.5.5 0 01.5.5.51.51 0 01-.5.5H6.63v1.21h2.12a.76.76 0 01.76.76v.28h1.31a.74.74 0 01.66.38l.82 1.44h.86V6.09a.76.76 0 01.76-.76H15a.76.76 0 01.76.76v5.19A.76.76 0 0115 12h-1.08a.76.76 0 01-.76-.76v-1.02h-.54v1.58a.76.76 0 01-.76.76zm-7.12-1h6.88V9.72a.51.51 0 01.5-.5h1.54a.5.5 0 01.5.5V11h.58V6.33h-.58v1.32a.5.5 0 01-.5.5H12a.51.51 0 01-.43-.26l-.89-1.56H9a.5.5 0 01-.5-.5v-.54H3.79v.54a.5.5 0 01-.5.5h-.54v4.19h1.16a.51.51 0 01.45.28zM3.57 3z"></path></svg>
+                    Engine (upto)</span>
+                    <span>3956 cc</span>
+                </div>
+                <div>
+					<span class="iconname"><svg class='V3C5bO' viewBox="0 0 16 16" fill="currentcolor" tabindex="-1" focusable="false" aria-hidden="true" role="img"><path d="M11.86 12.56H4.59a.75.75 0 01-.68-.42l-.31-.62H2.51a.76.76 0 01-.76-.76V9h-.49v1.25a.55.55 0 01-.5.52c-.45 0-.5-.52-.5-.52V6.61a.5.5 0 01.5-.5.5.5 0 01.5.5V8h.49V6.09a.76.76 0 01.76-.76h.28v-.28a.76.76 0 01.76-.76h2.08V3.12H3.55V3c-.49-.07-.5-.19-.5-.41a.5.5 0 01.48-.51h5.22a.5.5 0 01.5.5.51.51 0 01-.5.5H6.63v1.21h2.12a.76.76 0 01.76.76v.28h1.31a.74.74 0 01.66.38l.82 1.44h.86V6.09a.76.76 0 01.76-.76H15a.76.76 0 01.76.76v5.19A.76.76 0 0115 12h-1.08a.76.76 0 01-.76-.76v-1.02h-.54v1.58a.76.76 0 01-.76.76zm-7.12-1h6.88V9.72a.51.51 0 01.5-.5h1.54a.5.5 0 01.5.5V11h.58V6.33h-.58v1.32a.5.5 0 01-.5.5H12a.51.51 0 01-.43-.26l-.89-1.56H9a.5.5 0 01-.5-.5v-.54H3.79v.54a.5.5 0 01-.5.5h-.54v4.19h1.16a.51.51 0 01.45.28zM3.57 3z"></path></svg>
+                    Engine (upto)</span>
+                    <span>3956 cc</span>
+                </div>
+                <div>
+                    <div class="input-group inline-group">
+                      <div class="hero-btn red-dec-btn" id="decrease" onclick="decreaseValue()" value="Decrease Value">
+                          <i class="fa fa-minus"></i>
+                      </div>
+                      <input type="number" id="number" value="0" />
+                      <div class="hero-btn red-inc-btn" id="increase" onclick="increaseValue()" value="Increase Value">
+                          <i class="fa fa-plus"></i>
+                      </div>
+                    </div>
+                </div>
+                <div>
+                     <a href="#" id="addtocart" class="button" onclick="increaseCartValue()">Add to cart</a>
+                </div>
+                <div>
+                     <a href="#" id="buynow" class="button">Buy now</a>
+                </div>
+            </div>
+       </div>
+       <div class="product-detail-description">
+       		<h2>Our Certificate & Online Programs For 2021</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci nesciunt nisi fuga repellendus voluptates earum optio perferendis quidem aliquid aliquam! Numquam laudantium officiis modi molestiae nihil et placeat delectus aliquid?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur at cupiditate nam, deleniti aut blanditiis corrupti facilis? Enim dolore inventore saepe nisi, rerum sunt delectus atque voluptatibus, dolores assumenda sit.</p>           
+            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestias quas quod totam quis officiis? Minima fugiat architecto vero qui blanditiis optio suscipit, eligendi mollitia harum, exercitationem labore corrupti culpa.</p>
+		</div>
+   </section>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="c6213794-cda3-4161-b594-ee8ab37bf755">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-04T23:26:08.375+05:30"
+        cq:lastModifiedBy="admin"
+        cq:name="Fuel_Tank_Parts_1.jpg"
+        cq:parentPath="/content/dam/autoexpo/products/fueltank"
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-03-07T19:21:19.804+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:extracted="{Date}2022-03-07T19:21:19.448+05:30"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Decimal}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Decimal}-1.0"
+            dam:Progressive="no"
+            dam:sha1="cfc3c679edc447a8b4a03c323ca1fce0da8fbb22"
+            dam:size="{Long}10660"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2022-03-04T22:39:16.006+05:30"
+            jcr:lastModified="{Date}2022-03-07T19:20:43.232+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}250"
+            tiff:ImageWidth="{Long}250"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

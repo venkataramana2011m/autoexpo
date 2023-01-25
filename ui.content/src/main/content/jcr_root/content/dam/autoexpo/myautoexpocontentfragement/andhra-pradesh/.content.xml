@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="79d4e407-9c70-48cb-a1f7-163befd170a0">
+    <jcr:content
+        cq:name="andhra-pradesh"
+        cq:parentPath="/content/dam/autoexpo/myautoexpocontentfragement"
+        jcr:description=""
+        jcr:lastModified="{Date}2022-03-21T23:46:33.570+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Andhra Pradesh"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-03-21T23:46:33.571+05:30">
+        <data
+            cq:model="/conf/autoexpo/settings/dam/cfm/models/statelist"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                multiDistrictList="[/content/dam/autoexpo/myautoexpocontentfragement/bangalore]"
+                multiDistrictList_x0040_LastModified="{Date}2022-03-21T23:46:33.458+05:30"
+                txtStateCode="AP"
+                txtStateCode_x0040_LastModified="{Date}2022-03-21T23:46:33.456+05:30"
+                txtStateName="Andhra Pradesh"
+                txtStateName_x0040_LastModified="{Date}2022-03-21T23:46:33.454+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

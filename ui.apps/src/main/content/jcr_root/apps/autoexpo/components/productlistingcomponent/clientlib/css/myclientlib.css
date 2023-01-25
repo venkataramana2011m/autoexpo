@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+ 
+.userlist-body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color: black;
+    font-family: 'DM Mono', monospace;
+    height:100%;
+    overflow-y:auto;
+    overflow-x: auto;
+     
+}
+ 
+.userlist-body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+ 
+.userlist-body::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+ 
+.userlist-body::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+ 
+.user-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 35px;
+}
+ 
+.user{
+    font-size: x-small;
+    height: 180px;
+    width: 550px;
+    min-height: 150px;
+    min-width: 250px;
+    padding : 2rem;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem  #000;
+ 
+    transition: .2s;
+}
+ 
+.user-header {
+    margin-bottom: auto;
+}
+ 
+.user-header p {
+    font-size: 14px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+}
+ 
+.user-header a {
+  position: relative;
+  display: inline-block;
+  color: royalblue;
+  overflow: hidden;
+  background: linear-gradient(90deg,#fff,#fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none; 
+  
+}
+ 
+.user-header h2:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+.user-header img {
+    display: block;
+    position: relative;
+    float: left;
+    object-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 16%;
+    filter: grayscale(100%);
+    margin: 10px 10px;
+    /*box-shadow: 0 1rem 3rem  rgb(158, 157, 157);*/
+    transition: .2s;
+}
+.user-details {
+    font-size: small;    
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    margin: -1rem 0 0;
+    
+}
+ 
+.user-details h2 {
+    position: relative;
+    font-size: 20px;
+    margin: 0 0 1rem;
+    cursor: pointer;
+     
+}
+ 
+.user-details a {
+  color: royalblue;
+  text-decoration: none;
+}
+ 
+.user-details p {
+    font-size: 14px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+     
+}
+ 
+.user-details h2:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

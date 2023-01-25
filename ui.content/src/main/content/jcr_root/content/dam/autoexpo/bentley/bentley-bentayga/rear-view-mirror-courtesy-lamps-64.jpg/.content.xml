@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="1502b474-6104-4c83-813b-fc3e0e67c9fe">
+    <jcr:content
+        cq:name="rear-view-mirror-courtesy-lamps-64.jpg"
+        cq:parentPath="/content/dam/autoexpo/bentley/bentley-bentayga"
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-03-07T19:21:10.052+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:extracted="{Date}2022-03-07T19:21:09.723+05:30"
+            dam:sha1="3620ad592295587cfd3f8996fe5674d432a186ec"
+            dam:size="{Long}11500"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2022-03-07T19:21:04.673+05:30"
+            jcr:lastModified="{Date}2022-03-07T19:21:04.671+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

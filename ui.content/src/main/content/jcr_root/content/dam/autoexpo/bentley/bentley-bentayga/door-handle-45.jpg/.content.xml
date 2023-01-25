@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="6f61c1de-2a2d-464e-a7b1-e61726d56cd5">
+    <jcr:content
+        cq:name="door-handle-45.jpg"
+        cq:parentPath="/content/dam/autoexpo/bentley/bentley-bentayga"
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-03-07T19:20:56.751+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:extracted="{Date}2022-03-07T19:20:56.154+05:30"
+            dam:sha1="5fc4ef8a46511f6bce447db8db395dba7d85ec3c"
+            dam:size="{Long}51464"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2022-03-07T19:20:45.395+05:30"
+            jcr:lastModified="{Date}2022-03-07T19:20:45.393+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-08T18:42:46.654+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/autoexpo/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="BENTLEY"
+        sling:resourceType="autoexpo/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="autoexpo/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="autoexpo/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:created="{Date}2022-03-04T18:55:47.728+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T18:55:53.924+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/text"
+                        text="&lt;p>Bentley Bentayga price starts at Rs. 4.10 Crore. Bentley offers Bentayga in India in SUV category.&lt;/p>&#xd;&#xa;&lt;p>British marquee Bentley was founded in 1919. A subsidiary of the Volkswagen Group, the company has its headquarters and factory located in Crewe, England. The brand was launched in India back in 2010.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <sparelistingcomponen
+                        jcr:created="{Date}2022-03-08T18:37:33.645+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-08T18:42:14.273+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/sparelistingcomponent">
+                        <productDetailsWithMap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                productImage="/content/dam/autoexpo/products/brakes/Brakepart-3.jpg"
+                                productName="Bentley Bentayga"
+                                productPath="/content/autoexpo/us/en/motor-bike-braking/shrenik-bicycle-brake-lever-alloy-clutch-for-cycle-power-brakes-"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                productImage="/content/dam/autoexpo/aston-martin.png"
+                                productName="test 1"
+                                productPath="/content/autoexpo/us/en/motor-bike-braking/aow-bikes-yamaha-fz-fazer-moxi-short-adjustable-brake-clutch-lev"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                productImage="/content/dam/autoexpo/bmw.jpg"
+                                productName="test 2"
+                                productPath="/content/autoexpo/us/en/electricals/led-strip-tail-light-turn-signal-brake-indicator--for---all-bike"/>
+                        </productDetailsWithMap>
+                    </sparelistingcomponen>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

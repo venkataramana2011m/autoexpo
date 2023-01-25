@@ -1,0 +1,68 @@
+/* styling navlist */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Mono', sans-serif;
+}
+.header{
+    height: 60px;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: rgba(27, 61, 129);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+nav img{
+    width:270px;    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;    
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+.logo {
+  max-height: 70px;
+}
+.V3C5bO{
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+    }

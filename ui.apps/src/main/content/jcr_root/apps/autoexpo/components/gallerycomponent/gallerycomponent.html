@@ -1,0 +1,50 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $.ajax({
+            url: "/bin/demo/gallerylist",
+            method: "GET",
+            success: function(myresponse) {
+                $("#ajaxResponse").append("<table/>");
+                    $.each(myresponse.DamAssetList,function(key, value){
+                    	$("#ajaxResponse").append($('<tr/>'));
+                        $("#ajaxResponse").append($('<td/>').html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'));
+                        $("#ajaxResponse").append($('<td/>').html('<img src="'+value["path"]+'" style="width:150px; height:100px; border:1px solid #A7D7F9; border-radius:6px;box-shadow: 5px 5px 5px gray;" onclick="fnshowImg(this.src);"/>'));
+                        $("#ajaxResponse").append($('<td/>').html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'));
+                        $("#ajaxResponse").append($('<td/>').html('<p style="vertical-align: middle;">'+value["title"].split('.').slice(0, -1).join('.').toUpperCase() +'</p>'));
+                    });                 
+ 
+                console.log("success");
+            },
+            failure: function(myresponse) {
+                CQ.Notification.notifyFromResponse(myresponse) ;
+            }
+       });
+ 
+    });
+    function fnshowImg(trgtsrc){
+     document.getElementById("preview").src = trgtsrc;
+    }
+    function fndivgalleryposition(){
+    }
+</script>
+<h1>Users/Groups in the AEM JCR are : </h1>
+<p>This is your AEM HTML Template Language component using WCMUsePojo</p>
+<table>
+    <tr>
+        <td>
+        	<div id="imgPreview">
+                <center>
+                    <div  style="width:700px; height:350px; border:1px solid #A7D7F9; border-radius:6px;box-shadow: 5px 5px 5px gray;">
+                        <img id="preview" src="" style="width:700px; height:350px; border:1px solid #A7D7F9; border-radius:6px;box-shadow: 5px 5px 5px gray;" />
+                    </div>
+                </center>
+            </div>
+        </td>
+        <td>
+            <div id="anotherSection" style="overflow-x:hidden;overflow-y:scroll;width:550px;height:350px;white-space:nowrap;">
+                <div id="ajaxResponse"></div>
+            </div>
+        </td>
+    </tr>
+</table>

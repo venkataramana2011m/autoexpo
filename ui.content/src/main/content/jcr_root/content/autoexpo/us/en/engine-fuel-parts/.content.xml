@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-05T15:57:04.114+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/autoexpo/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Engine &amp; Fuel Parts"
+        sling:resourceType="autoexpo/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="autoexpo/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="autoexpo/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/container"
+                    layout="responsiveGrid">
+                    <productlistingcompon
+                        jcr:created="{Date}2022-03-05T15:55:17.290+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T15:57:04.106+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/productlistingcomponent">
+                        <productDetailsWithMap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                productImage="/content/dam/autoexpo/products/fueltank/Fuel_Tank_Parts_1.jpg"
+                                productName="NOBLE Bike Fuel Tank Lock for Hero CD100SS"
+                                productPath="/content/autoexpo/us/en/engine-fuel-parts/noble-bike-fuel-tank-lock-for-hero-cd100ss"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                productImage="/content/dam/autoexpo/products/fueltank/Fuel_Tank_Parts_2.jpg"
+                                productName="Generic Magnetic Glass Bowl Fuel or Petrol Filter for Royal Enfield bs3 and bs4 Carbureted Models"
+                                productPath="/content/autoexpo/us/en/engine-fuel-parts/generic-magnetic-glass-bowl-fuel-or-petrol-filter-for-royal-enfi"/>
+                        </productDetailsWithMap>
+                    </productlistingcompon>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+    <noble-bike-fuel-tank-lock-for-hero-cd100ss/>
+    <generic-magnetic-glass-bowl-fuel-or-petrol-filter-for-royal-enfi/>
+</jcr:root>

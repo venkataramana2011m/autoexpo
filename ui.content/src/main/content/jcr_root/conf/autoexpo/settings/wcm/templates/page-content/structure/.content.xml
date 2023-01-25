@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-03-04T09:19:36.036+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/autoexpo/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="autoexpo/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="autoexpo/components/container"
+            layout="simple">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="autoexpo/components/container"
+                layout="responsiveGrid">
+                <navigation
+                    jcr:created="{Date}2022-03-04T09:19:36.028+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T09:19:36.028+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/navigation"/>
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/title"
+                    editable="{Boolean}true"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/container"
+                    editable="{Boolean}true"/>
+            </container>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="autoexpo/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/autoexpo/us/en/site/footer/master"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

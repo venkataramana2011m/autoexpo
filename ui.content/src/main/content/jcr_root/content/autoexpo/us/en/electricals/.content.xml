@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-04T23:48:27.224+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/autoexpo/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Electricals"
+        sling:resourceType="autoexpo/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="autoexpo/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="autoexpo/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:created="{Date}2022-03-04T23:44:57.081+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T23:45:03.038+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/text"
+                        text="&lt;p>Bentley Bentayga price starts at Rs. 4.10 Crore. Bentley offers Bentayga in India in SUV category.&lt;/p>&#xd;&#xa;&lt;p>British marquee Bentley was founded in 1919. A subsidiary of the Volkswagen Group, the company has its headquarters and factory located in Crewe, England. The brand was launched in India back in 2010.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <productlistingcompon
+                        jcr:created="{Date}2022-03-04T23:45:11.050+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T23:48:27.216+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/productlistingcomponent"
+                        productListingTitle="Electrical Spare Parts">
+                        <productDetailsWithMap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                productAvailability="instock"
+                                productImage="/content/dam/autoexpo/products/electrical/Electrical_Parts_1.jpg"
+                                productName="LED Strip Tail Light Turn Signal Brake Indicator- for - All Bikes"
+                                productPath="/content/autoexpo/us/en/electricals/led-strip-tail-light-turn-signal-brake-indicator--for---all-bike"
+                                productPrice="1234"
+                                productQuantity="12"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                productAvailability="instock"
+                                productImage="/content/dam/autoexpo/products/electrical/Electrical_Parts_2.jpg"
+                                productName="SSU20L5N Universal 60 W Fog Light for All Bike Car SUV ATV - Foglight Bar Light Auxiliary Light - Fitting Inside – Free ON/Off Switch (YELLOW, PACK OF 2)"
+                                productPath="/content/autoexpo/us/en/electricals/ssu20l5n-universal-60-w-fog-light-for-all-bike-car-suv-atv---fog"
+                                productPrice="123"
+                                productQuantity="23"/>
+                        </productDetailsWithMap>
+                    </productlistingcompon>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+    <led-strip-tail-light-turn-signal-brake-indicator--for---all-bike/>
+    <ssu20l5n-universal-60-w-fog-light-for-all-bike-car-suv-atv---fog/>
+</jcr:root>

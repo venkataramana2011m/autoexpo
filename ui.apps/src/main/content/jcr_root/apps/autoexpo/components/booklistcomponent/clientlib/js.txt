@@ -1,0 +1,3 @@
+
+#base=js
+book-gallery.js

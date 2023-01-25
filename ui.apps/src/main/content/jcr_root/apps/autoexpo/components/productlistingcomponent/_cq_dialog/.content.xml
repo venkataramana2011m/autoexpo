@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <productdetailwithmultifield
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Details With Multifield"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Product Listing Title"
+                                name="./productListingTitle"/>
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Product Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <bookdetailswithmap
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Products Details"
+                                        fieldLabel="Product Details"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Products Details"
+                                            name="./productDetailsWithMap">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <productname
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Product Name"
+                                                    name="./productName"/>
+                                                <productimage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="The root page from which to search in. Can be a blueprint master, language master or regular page."
+                                                    fieldLabel="Product Image"
+                                                    name="./productImage"
+                                                    rootPath="/content/dam/autoexpo"/>
+                                                <productprice
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Product Price"
+                                                    name="./productPrice"/>
+                                                <productquantity
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Product Quantity"
+                                                    name="./productQuantity"/>
+                                                <productpath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="The root page from which to search in. Can be a blueprint master, language master or regular page."
+                                                    fieldLabel="Product Path"
+                                                    name="./productPath"
+                                                    rootPath="/content/autoexpo"/>
+                                                <productavailability
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Product Availability"
+                                                    name="./productAvailability">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <def
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="(default)"
+                                                            value=""/>
+                                                        <instock
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="IN STOCK"
+                                                            value="instock"/>
+                                                        <soldout
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="SOLDOUT"
+                                                            value="soldout"/>
+                                                    </items>
+                                                </productavailability>
+                                            </items>
+                                        </field>
+                                    </bookdetailswithmap>
+                                </items>
+                            </well>
+                        </items>
+                    </productdetailwithmultifield>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

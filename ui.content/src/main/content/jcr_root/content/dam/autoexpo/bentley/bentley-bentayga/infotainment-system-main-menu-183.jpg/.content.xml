@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="ea783a2f-b1be-46fb-9e45-65ceb8165e1a">
+    <jcr:content
+        cq:name="infotainment-system-main-menu-183.jpg"
+        cq:parentPath="/content/dam/autoexpo/bentley/bentley-bentayga"
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-03-07T19:21:13.691+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:extracted="{Date}2022-03-07T19:21:13.523+05:30"
+            dam:sha1="cef31c6b2831582e1adbbea065bfef4c5e1c76d4"
+            dam:size="{Long}46638"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2022-03-07T19:20:47.173+05:30"
+            jcr:lastModified="{Date}2022-03-07T19:20:47.172+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

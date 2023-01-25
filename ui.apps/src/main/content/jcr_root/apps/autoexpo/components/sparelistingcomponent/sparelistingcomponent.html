@@ -1,0 +1,16 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientlib.css @ categories='productdetailmultifieldwithmap.clientlib'}"></sly>
+
+
+<ul class="mybrand-ul" data-sly-use.model="com.adobe.aem.guides.autoexpo.core.models.ProductListWithMap">
+    <li class="mybrand-li" data-sly-repeat="${model.productDetailsWithMap}">
+        <a class="mybrand-a" title="${item.productName}" href="${item.productPath}.html">
+            <div class="mybrand-div">
+                <div class="mybrand-img-div">
+                    <img class="mybrand-img" src="${item.productImage}" alt="${item.productName}" title="${item.productName}">
+                </div>
+            </div>
+            <div class="mybrand-title">${item.productName}</div>
+        </a>
+   </li>
+</ul>

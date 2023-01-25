@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-04T23:53:32.310+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/autoexpo/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Rewards and benefits"
+        sling:resourceType="autoexpo/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="autoexpo/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="autoexpo/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:created="{Date}2022-03-04T23:53:26.594+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T23:53:32.306+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/text"
+                        text="&lt;p>On top of Amazon’s $15 minimum wage, the company offers full-time employees industry-leading benefits, which include comprehensive healthcare from day one, 401(k) with 50% match, up to 20 weeks paid parental leave, and a flexible Ramp Back Program and Leave Share Program that allows employees to share their paid leave with their spouse or partner. For associates reaching their one-year employment mark, we offer our innovative Career Choice Program, which pre-pays 95% of tuition for courses in high-demand fields. Since the program’s launch four years ago, more than 16,000 employees in 10 countries have pursued degrees in game design, visual communications, nursing, IT programming, and radiology, to name a few.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Pay&lt;/p>&#xd;&#xa;&lt;p>Pay in Amazon’s fulfillment centers varies by role, experience, and location. Amazon’s minimum wage begins at $15 an hour for all full-time, part-time, temporary (including those hired by agencies), and seasonal employees across the U.S.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Amazon includes starting pay in our job descriptions. For information on starting pay for a variety of fulfillment center roles, visit our jobs page.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Benefits&lt;/p>&#xd;&#xa;&lt;p>Amazon offers a full range of benefits to regular, full-time U.S. employees to support them and eligible family members, including their children and domestic partners. We’re proud of our industry-leading benefits and support programs, the details of which can be found at our hiring page.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Though benefits vary based on location, number of regularly scheduled hours worked, length of employment, and job status (such as part-time, seasonal, or temporary), they include:&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Medical, prescription drug, dental, and vision coverage&lt;/p>&#xd;&#xa;&lt;p>401(k) savings plan with 50% company match&lt;/p>&#xd;&#xa;&lt;p>Paid time-off and holiday overtime pay&lt;/p>&#xd;&#xa;&lt;p>Resources for overall well-being&lt;/p>&#xd;&#xa;&lt;p>Discounts on Amazon purchases&lt;/p>&#xd;&#xa;&lt;p>Health&lt;/p>&#xd;&#xa;&lt;p>Amazon’s medical plan allows associates to choose from multiple options to best fit their needs and those of their families. These include a Health Savings Account (with employee and employer contributions) and multiple network providers. Medical coverage also includes dental and vision plans as well as a Flexible Spending Account for health and dependent care.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Mental health&lt;/p>&#xd;&#xa;&lt;p>The physical and mental well-being of our associates is our top priority, and we are proud of both our efforts and overall success in this area. We provide comprehensive medical care starting on day one so employees have access to the care when they need it most, along with 24-hours-per-day free and confidential counseling services, and various leave and medical accommodation options covering both mental and physical health concerns.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Medical advice line&lt;/p>&#xd;&#xa;&lt;p>Amazon associates have 24/7 access to free consultations with a nurse, or for a small fee, a doctor who can help with diagnosis, recommend treatment and prescribe short-term prescriptions for less than the cost of an urgent care or emergency room visit.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Financial security&lt;/p>&#xd;&#xa;&lt;p>Amazon offers a 401(k) plan with 50% company match.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Additional benefits include:&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Free employee assistance program, which provides confidential 24/7 support, resources, and referrals for every aspect of work and personal life&lt;/p>&#xd;&#xa;&lt;p>Online resources for parents whose children struggle with developmental disabilities, as well as help finding child and elder care referrals and assistance&lt;/p>&#xd;&#xa;&lt;p>Financial counseling, estate planning, and other services in the event of a life-threatening illness or death&lt;/p>&#xd;&#xa;&lt;p>Adoption assistance for qualified domestic and international adoption expenses including attorney fees, court costs, and travel&lt;/p>&#xd;&#xa;&lt;p>Company-paid basic life and accidental death and dismemberment insurance, with the option to enroll in additional coverage for dependents&lt;/p>&#xd;&#xa;&lt;p>Company-paid short-term and long-term disability&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

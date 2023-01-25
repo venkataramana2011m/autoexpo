@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-05T16:10:40.808+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/autoexpo/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="LED Strip Tail Light Turn Signal Brake Indicator- for - All Bikes"
+        sling:resourceType="autoexpo/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="autoexpo/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="autoexpo/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="autoexpo/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:created="{Date}2022-03-04T23:48:55.677+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T16:10:40.803+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/text"
+                        text="&lt;p>The latest iteration of the&amp;nbsp;&lt;a href=&quot;https://www.carwale.com/bentley-cars/bentayga/&quot; title=&quot;Bentley Bentayga&quot;>Bentley Bentayga&lt;/a>&amp;nbsp;has landed on the Indian shores and is being offered with a price tag of Rs 4.10 crore (ex-showroom, Delhi). It features a handful of cosmetic updates and feature additions to the already luxurious cabin.&lt;/p>&#xd;&#xa;&lt;p>Up-front, the Bentley Bentayga facelift features a reworked bumper, more upright matrix grille, oval shaped headlamps with cut crystal glassware and 22 washer jets in each arm.&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <productgallerycompon
+                        jcr:created="{Date}2022-03-04T23:49:12.791+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T23:49:24.565+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="autoexpo/components/productgallerycomponent"
+                        productGallery="/content/dam/autoexpo/products/electrical"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

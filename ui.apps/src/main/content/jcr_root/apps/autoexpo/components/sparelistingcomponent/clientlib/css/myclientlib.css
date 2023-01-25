@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+ 
+.mybrand-li{
+    border-color: #efefef;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding-left: 4px;
+    padding-bottom: 16px;
+    padding-right: 4px;
+    padding-top: 16px;
+    width:16.666666666666668%;
+}
+
+@media screen and (min-width: 800px)
+.mybrand-li {
+    border-color: #e1e1e1;
+}
+
+.mybrand-a{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+a, button {
+    background-color: transparent;
+}
+ol, ul {
+    list-style: none;
+}
+.mybrand-ul {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    display: flex;
+}
+.mybrand-div {
+    height: 50px;
+    width: 98px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mybrand-img-div {
+    padding-bottom: 56.25%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.mybrand-img {
+    max-height: 100%;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+img, legend {
+    border: 0;
+}
+
+.mybrand-title {
+    color: #6f6f6f;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 8px;
+}
