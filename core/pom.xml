@@ -188,5 +188,15 @@ Import-Package: javax.annotation;version=0.0.0,*
            <artifactId>twitter4j-core</artifactId>
            <version>[4.0,)</version>
        </dependency>
+        <dependency>
+            <groupId>com.nytimes.android</groupId>
+            <artifactId>cache</artifactId>
+            <version>3.0.0-alpha</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.0.0</version>
+        </dependency>
     </dependencies>
 </project>

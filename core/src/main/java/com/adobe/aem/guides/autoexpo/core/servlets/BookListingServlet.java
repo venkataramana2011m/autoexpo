@@ -45,22 +45,19 @@ public class BookListingServlet extends SlingSafeMethodsServlet {
 	private String pageTitle;
 	private String path = "/content/autoexpo/us/en/new-cars";
 	private Page prodPage = null;
-	private Session session;
 	@Reference
 	private QueryBuilder builder;
 	private HashSet<String> uniqueBookList;
 
-	@SuppressWarnings("static-access")
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
 			throws ServletException, IOException {
 		StringBuffer jsonResponseData = new StringBuffer();
+		com.adobe.aem.guides.autoexpo.core.servlets.BookListingServlet bookListingServlet = new BookListingServlet();
 		String readLine = null;
 		log.error("----------< Executing Book Listing Builder Servlet >----------");
 		try {
-			ResourceResolver resourceResolver = request.getResourceResolver();
-			session = resourceResolver.adaptTo(Session.class);
-			uniqueBookList = new HashSet<String>();
+			bookListingServlet.uniqueBookList = new HashSet<String>();
 			URL getUrl = new URL(
 					appConstants.TNYTIMES_ENDPOINT.toString() + appConstants.TNYTIMES_BOOKS_CATEGORIES_API.toString()
 							+ appConstants.TNYTIMES_QUERYPARAMETER.toString()
@@ -72,68 +69,23 @@ public class BookListingServlet extends SlingSafeMethodsServlet {
 			if (responseCode == HttpURLConnection.HTTP_OK) {
 				BufferedReader in = new BufferedReader(new InputStreamReader(conection.getInputStream()));
 				while ((readLine = in.readLine()) != null) {
-					uniqueBookList.add(readLine);
+					bookListingServlet.uniqueBookList.add(readLine);
 				}
 				in.close();
-				Iterator<String> itr = uniqueBookList.iterator();
+				Iterator<String> itr = bookListingServlet.uniqueBookList.iterator();
 				while (itr.hasNext()) {
 					jsonResponseData.append(itr.next());
-					/*
-					 * JSONObject obj = new JSONObject(); obj.put(itr.); obj.put("num", new
-					 * Integer(100)); obj.put("balance", new Double(1000.21)); obj.put("is_vip", new
-					 * Boolean(true));
-					 */
 				}
-				/*
-				 * JSONParser parser = new JSONParser(); JSONObject json = (JSONObject)
-				 * parser.parse(stringToParse); for (Hit hit : searchResult.getHits()) {
-				 * 
-				 * }
-				 */
-				// jsonResponseData.append(uniqueBookList);
 				log.error("JSON String Data " + jsonResponseData.toString());
 			} else {
 				log.error("Response Code :: " + responseCode);
 			}
-
-			session.save();
-			session.refresh(true);
-
 			response.setContentType("application/json");
 			response.setCharacterEncoding("UTF-8");
 			response.getWriter().write(jsonResponseData.toString());
+
 		} catch (Exception e) {
 			log.error(e.getMessage());
 		}
-	}
-
-	public void createPages(String pageName, String pageTitle, ResourceResolver resourceResolver) {
-		try {
-			log.error("With in the Create Page method ...... !!!! ");
-			PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
-			log.error("With in the Create Page method ...... !!!! ");
-			prodPage = pageManager.create(path, pageName, BRAND_PAGE_TEMPLATE, pageTitle, true);
-			Resource resource = resourceResolver.getResource(prodPage.getPath());
-			Node pageNode = resource.adaptTo(Node.class);
-			Node jcrNode = null;
-			if (prodPage.hasContent()) {
-				jcrNode = prodPage.getContentResource().adaptTo(Node.class);
-			} else {
-				jcrNode = pageNode.addNode("jcr:content", "cq:PageContent");
-			}
-			jcrNode.setProperty("sling:resourceType", RENDERER);
-			Node root = session.getNode(prodPage.getPath().toString() + "/jcr:content/root/responsivegrid");
-			Node day = root.addNode("biographycomponent", "nt:unstructured");
-			day.setProperty("sling:resourceType", "autoexpo/components/biographycomponent");
-
-		} catch (Exception e) {
-			log.error(e.getMessage(), e);
-		}
-	}
-
-	public String getFileNameWithoutExtension(String fileName) {
-		String deleteExtension = fileName.substring(0, fileName.lastIndexOf("."));
-		return deleteExtension;
-
 	}
 }

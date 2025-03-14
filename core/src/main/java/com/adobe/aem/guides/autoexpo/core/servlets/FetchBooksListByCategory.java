@@ -24,7 +24,8 @@ import com.adobe.aem.guides.autoexpo.core.constants.AppConstants;
 
 @Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Book Listing servlet",
 		"sling.servlet.methods=" + HttpConstants.METHOD_GET,
-		"sling.servlet.paths=" + "/bin/autoexpo/fetchbooksbycategory" })
+		"sling.servlet.selectors=bycategory",
+		"sling.servlet.paths=" + "/bin/autoexpo/fetchbooks" })
 
 public class FetchBooksListByCategory extends SlingSafeMethodsServlet {
 	
